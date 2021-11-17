@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="Form">
+
+    <!-- FORMULÁRIO CADASTRAR COMIDA -->
+    <div class="formCadComida">
+      <center><h3>Cadastra Comida</h3></center>
+      <form id="frmComida">
+        <label>Código</label>
+        <input type="number" id="codigoComida">
+        
+        <label>Nome</label>
+        <input type="text" id="nomeComida">
+        
+        <label>Descrição</label>
+        <input type="text" id="descricaoComida">
+        
+        <label>Valor Unitário</label>
+        <input type="text" id="valorUnitarioComida">
+        
+        <label>Data Validade</label>
+        <input type="date" id="dataValidadeComida">
+        
+        <label>Peso</label>
+        <input type="text" id="pesoComida">
+        
+        <label>Tipo</label>
+        <input type="text" id="tipoComida">
+        <button class="btn-adc" id="btnAdcComida" type="button">Adicionar Comida</button>
+        
+      </form>
+    </div>
+
+    <!-- FORMULÁRIO CADASTRAR BEBIDA -->
+    <div class="formCadBebida">
+       <center><h3>Cadastra Bebida</h3></center>
+      <form id="frmBebida">
+        <label>Código</label>
+        <input type="number" id="codigoBebida">
+        
+        <label>Nome</label>
+        <input type="text" id="nomeBebida">
+        
+        <label>Descrição</label>
+        <input type="text" id="descricaoBebida">
+
+        <label>Valor Unitário</label>
+        <input type="text" id="valorUnitarioBebida">
+        
+        <label>Data Validade</label>
+        <input type="date" id="dataValidadeBebida">
+        
+        <label>Litros</label>
+        <input type="text" id="litrosBebida">
+        
+        <label>Tipo</label>
+        <input type="text" id="tipoBebida">
+        <button class="btn-adc" id="btnAdcBebida" type="button">Adicionar Bebida</button>
+      </form>
+    </div>
+
+    <!-- FORMULÁRIO CADASTRAR PEDIDO -->
+    <div class="formCadPedido">
+      <center><h3>Cadastra Pedido</h3></center>
+      <form id="frmPedido">
+        <label>Número</label>
+        <input type="number" id="numeroPedido">
+        
+        <label>Mesa</label>
+        <input type="number" id="mesaPedido">
+        
+        <label>Comida</label>
+        <input type="number" id="comidaPedido">
+        
+        <label>Quantidade Comida</label>
+        <input type="number" id="qtdComidaPedido">
+        
+        <label>Bebida</label>
+        <input type="number" id="bebidaPedido">
+        
+        <label>Quantidade Bebida</label>
+        <input type="number" id="qtdBebidaPedido">
+        <button class="btn-adc" id="btnAdcPedido" type="button">Criar Pedido</button>
+      </form>
+    </div>
+  </div>
+  
+  
+  <div class="Lista">
+    <div class="comida">
+      <label>Excluir comida por cód:</label>
+      <input type="number" id="excluirComida">
+      <button class="btn-exc" id="btnExcComida" type="button">Excluir Comida</button>
+
+      <button class="btn-lst" id="btnLstComida" type="button">Listar Comidas</button>
+      <div id="listaComida"></div>
+    </div>
+    <div class="bebida">
+      <label>Excluir bebida por cód:</label>
+      <input type="number" id="excluirBebida">
+      <button class="btn-exc" id="btnExcBebida" type="button">Excluir Bebida</button>
+
+      <button class="btn-lst" id="btnLstBebida" type="button">Listar Bebidas</button>
+      <div id="listaBebida"></div>
+    </div>
+    <div class="pedido">    
+      <label>Excluir pedido por cód:</label>
+      <input type="number" id="excluirPedido">
+      <button class="btn-exc" id="btnExcPedido" type="button">Excluir Pedido</button>
+
+      <button class="btn-lst" id="btnLstPedido" type="button">Listar Pedidos</button>
+      <div id="listaPedido"></div>
+    </div>
+  </div>
+</body>
+<script type="module" src="index.js"></script>
+</html>
+
+
